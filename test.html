@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Ajax/json test</title>
+  	<meta name="description" content="">
+  	<link rel='stylesheet'  href='jquery.fancybox.min.css' media='all'>
+  	<link rel="icon" href="">
+</head>
+<body itemscope="" itemtype="https://schema.org/WebPage">
+	<div id="app" itemscope itemtype="http://schema.org/ImageGallery"></div>
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "content.json";
+
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myArr = JSON.parse(this.responseText);
+    myFunction(myArr);
+  }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(arr) {
+  var out = "";
+  var i;
+  
+  for(i = 0; i < arr.length; i++) {
+
+  	out += '<a href="' + arr[i].largeImage + '" data-fancybox="gallery" data-caption="' + arr[i].dataCaption + '"><figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><img width="520" height="572" src="' + arr[i].thumbnail + '" alt="' + arr[i].figcaption + '" itemprop="thumbnail"><figcaption itemprop="caption">' + arr[i].figcaption + '</figcaption></figure></a>';
+  	}
+  
+  document.getElementById("app").innerHTML = out;
+}
+
+</script>
+<script src="jquery-3.4.1.min.js"></script>
+<script src='jquery.fancybox.min.js'></script>
+</body>
+</html>
