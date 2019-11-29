@@ -1,0 +1,58 @@
+@import "variables";
+@import "colors";
+@import "normalize";
+
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+input:focus,
+textarea:focus,
+a:focus,
+button:focus {
+	outline:thin dotted;
+}
+.wrap{
+	
+	margin:0 5%;
+	max-width:1284px;
+	@media only screen and (min-width: $extra-extra-large){
+		margin:0 auto;
+	}
+
+
+}
+.row{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	flex-wrap:wrap;
+	@media only screen and (min-width: $medium){
+		flex-direction:row;
+		justify-content:space-between;
+		flex-wrap:nowrap;
+	}
+	@media only screen and (min-width: $large){
+		justify-content:center;
+	}
+}
+.col {
+	&-3{
+		width:292px;
+		margin:12px auto;
+		background: #ccc;
+		@media only screen and (min-width: $medium){
+			width:31%;
+			margin:0;
+		}
+		@media only screen and (min-width: $large){
+			width:292px;
+			margin:0 14px
+		}
+	}
+
+
+}
