@@ -181,7 +181,7 @@ gulp.task('images', function () {
 					progressive: true
 				}),
 				imagemin.optipng({
-					optimizationLevel: 5
+					optimizationLevel: 6
 				}),
 				imagemin.svgo({
 					plugins: [{

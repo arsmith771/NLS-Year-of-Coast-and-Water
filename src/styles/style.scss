@@ -9,6 +9,13 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+body{
+	background-color: $white;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
 input:focus,
 textarea:focus,
 a:focus,
@@ -37,7 +44,11 @@ button:focus {
 	}
 	@media only screen and (min-width: $large){
 		justify-content:center;
+		&--title-nav{
+			justify-content:space-between;
+		}
 	}
+
 }
 .col {
 	&-3{
@@ -53,6 +64,116 @@ button:focus {
 			margin:0 14px
 		}
 	}
+}
+.site-header{
+	min-height:80px;
+	&__site-title{
+		
+		font-size:16px; // temp
+	}
+}
+.hero-image{
+	&__figure{
+		margin:0;
+		padding:0;
+		position:relative;
+		height:508px;
+		overflow:hidden;
+		display: flex;
+		flex-wrap: wrap;
+    	justify-content: flex-start;
+    	@media only screen and (min-width: $medium){
+			justify-content: center;
+    	}
+    	&--large{
+    		height:570px;
+    		@media only screen and (min-width: $large){
+				height:600px;
+			}
+		}
+		
+		@media only screen and (min-width: $extra-large){
+			display: block;
+			&--large{
+				height:660px;
+			}
+		}
+		&--overlayed{
+			position:absolute;
+			left:0;
+			right:0;
+			//bottom: 0;
+			top:80px;
+			z-index: -1;
+			
+		}
+	}
+	&__image{
+		display: block;
+	    height: auto;
+	    max-width: none;
+	    width: auto;
+		@media only screen and (min-width: $extra-extra-large){
+			width:100%;
+		}
+	}
+	&__caption{
+		margin:0;
+		padding:0;
+		position:absolute;
+		right:0;
+		bottom: 0;
+		background-color: $blue3;
+		color:$white;
+	}
+}
+.main-nav{
+	margin:0;
+	@media only screen and (min-width: $large){
+		margin:0 auto;
+	}
+	&__toggle{
+		display:block;
+		@media only screen and (min-width: $large){
+			display:none;
+		}
+	}
+}
+.main-menu{
+	margin:0;
+	padding:0;
+	display:none;
+	@media only screen and (min-width: $large){
+		display:flex;
+	}
+	&__item{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+}
+.main-sub-menu{
 
-
+}
+.main-content{
+	&__overlayed{
+		padding-top:390px ;
+		
+	}
+	&__page-intro{
+		min-height: 256px;
+		background-color: $white;
+		box-shadow: 0px 0px 22px $black;
+		&__fig{
+			margin:0;
+			padding:0;
+		}
+	}
+	&__gallery{
+		//background-color: $white;
+	}
+}
+.site-footer{
+	background-color: $dark1;
+	color:$white;
 }
