@@ -1,0 +1,15 @@
+<svg id="Component_5_1" data-name="Component 5 – 1" xmlns="http://www.w3.org/2000/svg" width="318" height="63" viewBox="0 0 318 63">
+  <g id="Group_1634" data-name="Group 1634" transform="translate(-111 170)">
+    <text id="Eadar_Cladaichean" data-name="Eadar Cladaichean" transform="translate(112 -137)" fill="#174159" font-size="15" font-family="SourceSansPro-Bold, Source Sans Pro" font-weight="700" letter-spacing="0.09em"><tspan x="0" y="15">Eadar Cladaichean</tspan></text>
+  </g>
+  <g id="Group_1633" data-name="Group 1633" transform="translate(-142 -239)">
+    <text id="Roon_the_Shores" data-name="Roon the Shores" transform="translate(314 272)" fill="#174159" font-size="15" font-family="SourceSansPro-Bold, Source Sans Pro" font-weight="700" letter-spacing="0.098em"><tspan x="0" y="15">Roon the Shores</tspan></text>
+  </g>
+  <g id="Group_1575" data-name="Group 1575" transform="translate(148 41.675)">
+    <g id="Group_1574" data-name="Group 1574">
+      <path id="Path_1220" data-name="Path 1220" d="M401.012,332.99a8.629,8.629,0,0,1-8.425,0q-.1-.055-.2-.113a9.468,9.468,0,0,0-2.656-1.008,9.58,9.58,0,0,0,2.2,1.8q.1.054.19.11A9.511,9.511,0,0,0,396.8,335a9.571,9.571,0,0,0,2.016-.214,9.469,9.469,0,0,0,2.655-1.008q.1-.058.2-.113a9.577,9.577,0,0,0,2.2-1.8,9.469,9.469,0,0,0-2.655,1.008Q401.111,332.935,401.012,332.99Z" transform="translate(-389.735 -329.548)" fill="#51d5e1"/>
+      <path id="Path_1221" data-name="Path 1221" d="M512.9,304.758l-.166-.1a9.469,9.469,0,0,0-2.667-1.014,9.6,9.6,0,0,0-4.034,0,9.47,9.47,0,0,0-2.655,1.008q-.1.058-.2.113a9.577,9.577,0,0,0-2.2,1.8,9.47,9.47,0,0,0,2.655-1.008q.1-.058.2-.113a8.629,8.629,0,0,1,8.439.008l.169.1a9.466,9.466,0,0,0,2.669,1.015A9.579,9.579,0,0,0,512.9,304.758Z" transform="translate(-491.906 -303.433)" fill="#51d5e1"/>
+    </g>
+  </g>
+  <text id="From_shore_to_shore" data-name="From shore to shore" fill="#236891" font-size="29" font-family="SourceSansPro-Light, Source Sans Pro" font-weight="300" letter-spacing="0.13em"><tspan x="0" y="30">From shore to shore</tspan></text>
+</svg>
