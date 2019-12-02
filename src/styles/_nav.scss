@@ -25,6 +25,7 @@
 			> .main-sub-menu {
 				left:auto;
 			}
+			
 			&:after{
 				content:'';
 				display:block;
@@ -32,13 +33,22 @@
 				position:absolute;
 				left:0;
 				right:0;
-				top:1em;
-				z-index: -1;
-				height:10em;
+				top:80px;
+				z-index: 1;
+				height:9em;
 				width:100%;				
 			}
 		}
 	}
+	&__lnk{
+		font-family:$light;
+		text-decoration: none;
+		text-decoration: none;
+	    display: block;
+    	padding: 28px 22px 29px 22px;	
+    	color:$black;
+    	text-shadow: 1px 1px 1px #000;
+    }
 }
 .main-sub-menu{
 	position:absolute;
@@ -46,10 +56,19 @@
 	left:-9999em;
 	margin:0;
 	padding:0;
+	z-index: 2;
 	&__item{
 		margin:0;
 		padding:0;
 		list-style: none;
+	}
+	&__lnk{
+		color:$white;
+		text-decoration:none;
+		font-family:$light;
+		display:block;
+		padding: 10px 40px;
+
 	}
 
 }
