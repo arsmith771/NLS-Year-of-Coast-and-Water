@@ -31,7 +31,7 @@ function myFunction(arr) {
   
   for(i = 0; i < arr.length; i++) {
 
-  	out += '<a href="' + arr[i].largeImage + '" data-fancybox="gallery" data-caption="' + arr[i].dataCaption + '"><figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><img width="520" height="572" src="' + arr[i].thumbnail + '" alt="' + arr[i].figcaption + '" itemprop="thumbnail"><figcaption itemprop="caption">' + arr[i].figcaption + '</figcaption></figure></a>';
+  	out += '<a class="gallery__cta" href="' + arr[i].largeImage + '" data-fancybox="gallery" data-caption="' + arr[i].dataCaption + '"><figure class="gallery__fig" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" width="520" height="572" src="' + arr[i].thumbnail + '" alt="' + arr[i].figcaption + '" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">' + arr[i].figcaption + '</figcaption></figure></a>';
   	}
   
   document.getElementById("app").innerHTML = out;

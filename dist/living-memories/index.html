@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>From shore to shore - Eadar Cladaichian, Roon the Shores</title>
     <meta name="description" content="">
   </head>
@@ -28,7 +28,7 @@
                   <li class="main-sub-menu__item"><a href="../locations/north/index.html" class="main-menu__lnk">North</a></li>
                 </ul>
               </li>
-              <li class="main-menu__item"><a href="index.html" class="main-menu__lnk">Living memories</a></li>
+              <li class="main-menu__item"><a href="../living-memory/index.html" class="main-menu__lnk">Living memories</a></li>
               <li class="main-menu__item"><a href="../resources/index.html" class="main-menu__lnk">Resources</a></li>
             </ul>
           </nav>
@@ -38,7 +38,7 @@
       <main class="main-content">
         <div class="hero-image">
           <figure class="hero-image__figure hero-image__figure--large">
-            <img class="hero-image__image" src="images/HERO-image-boatmen.jpg" alt="North Berwick, 1898">
+            <img class="hero-image__image" src="../images/HERO-image-boatmen.jpg" alt="North Berwick, 1898">
             <figcaption class="hero-image__caption">
               North Berwick, 1898
             </figcaption>
@@ -50,38 +50,43 @@
             <p>To Mark The 2020 Year Of Coasts And Waters The National Library Of Scotland Has Created This Resource To Celebrate Scotland’s Coastal Communities With A Small Sample From The Mackinnon Collection. This Collection Comprises More Than 14,000 Photographs Of Scotland Spanning The 1840S To The Mid-20Th Century And Was Jointly Acquired With The National Galleries Of Scotland With Help From The National Lottery Heritage Fund, The Scottish Government And Art Fund.</p>
             <div class="row">
               <div class="location location--west col-3">
-                <a href="#" class="location__cta">
+            
                   <dl class="location__list">
                     <dt class="location__title">West</dt>
                     <dd class="location__def">
-                      <img src="images/home-map-west.svg" width="215" height="215" alt="Map detail of west scotland" class="location__img">
-                      <span class="location__area">Select to see images from the west coast of Scotland</span>
+                      <button>Open overlay and play</button>
+                      <a href="#" class="">Play audio</a><br>
+                      <a href="#" class="">View location on map</a>
                     </dd>
-                  </dl>
-                </a>
+                  </dl>       
               </div>
-              <div class="location location--east col-3">
-                <a href="#" class="location__cta">
+              <div class="location location--north col-3">             
                   <dl class="location__list">
-                    <dt class="location__title">East</dt>
+                    <dt class="location__title">Awa tae the Sea,<br> Cullen, Moray</dt>
                     <dd class="location__def">
-                      <img src="images/go-to-map-east.svg" width="215" height="215" alt="Map detail of west scotland" class="location__img">
-                      <span class="location__area">Select to see images from the east coast of Scotland</span>
+                      <a href="#" id="open-video-1" class="paused">Open overlay and play</a><br>
+                      <a href="#" class="">Play video</a><br>
+                      <a href="#" class="">View location on map</a>
                     </dd>
-                  </dl>
-                </a>
+                  </dl>       
               </div>
-              <div class="location location--north col-3">
-                <a href="#" class="location__cta">
+              <div class="location location--west col-3">
+            
                   <dl class="location__list">
-                    <dt class="location__title">North</dt>
+                    <dt class="location__title">West</dt>
                     <dd class="location__def">
-                      <img src="images/home-map-north.svg" width="215" height="215" alt="Map detail of west scotland" class="location__img">
-                      <span class="location__area">Select to see images from the north coast of Scotland</span>
+                      <button>Open overlay and play</button>
+                      <a href="#" class="">Play audio</a><br>
+                      <a href="#" class="">View location on map</a>
                     </dd>
                   </dl>
-                </a>
+             
               </div>
+              
+            </div>
+            <div class="media overlay" id="video-overlay-1">
+              <button class="overlay__close" id="close-overlay-1">Close</button>
+              <video src="../video/Awa-tae-the-Sea_final_nov.mp4" controls class="media__item" id="awa-tae-the-sea"></video>
             </div>
           </section>
 
@@ -92,8 +97,8 @@
       <footer class="site-footer" itemscope="" itemtype="https://schema.org/WPFooter">
         <div class="wrap">
           <ul class="partner-logos">
-            <li class="partner-logos__item"><img src="images/Supporting_reverse_logo-1.svg"></li>
-            <li class="partner-logos__item"><img src="images/In-line-Lockup-WHITE.svg"></li>
+            <li class="partner-logos__item"><img src="../images/Supporting_reverse_logo-1.svg"></li>
+            <li class="partner-logos__item"><img src="../images/In-line-Lockup-WHITE.svg"></li>
             <li class="partner-logos__item"></li>
             <li class="partner-logos__item"></li>
             <li class="partner-logos__item"></li>
@@ -116,5 +121,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="../scripts/main.min.js"></script>
   </body>
 </html>

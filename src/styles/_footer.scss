@@ -1,0 +1,25 @@
+.site-footer{
+	background-color: $dark1;
+	&:before{
+		content:'';
+		display:block;
+		height:80px;
+		background-image: url('../images/strip-2.png');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: left top;
+		color:$white;
+		border-bottom:1px solid $dark3;
+	}
+}
+.footer-menu{
+	margin:0;
+	padding: 0;
+	display:flex;
+	flex-wrap:wrap;
+	&__item{
+		margin:0;
+		padding: 0;
+		list-style: none;
+	}
+}
