@@ -11,6 +11,20 @@ body{
 	line-height: 1.4;
 	font-size:16px;
 }
+h2{
+	color:$dark3;
+	font-size: 42px;
+	font-family:$bold;
+	letter-spacing: 4px;
+	line-height: 1;
+}
+h3 {
+    color: #515353;
+    font-size: 24px;
+    font-family: "Source Sans Pro bold";
+    letter-spacing: 4px;
+    line-height: 1.15;
+}
 img{
 	max-width:100%;
 	height:auto;

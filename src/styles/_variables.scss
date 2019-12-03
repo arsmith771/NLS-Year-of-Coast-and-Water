@@ -8,3 +8,11 @@ $light: 'Source Sans Pro light';
 $regular : 'Source Sans Pro regular';
 $semibold : 'Source Sans Pro semi bold';
 $bold: 'Source Sans Pro bold';
+
+@mixin bar {
+	background-size: 110% 110%;
+   	background-position: -10px -10px;
+}
+@mixin dropShad{
+	box-shadow:0 3px 6px $dark4;
+}

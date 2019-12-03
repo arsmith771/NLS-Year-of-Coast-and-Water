@@ -21,6 +21,8 @@
 		margin:0;
 		padding:0;
 		list-style: none;	
+		display:flex;
+		align-items:center;
 		&--has-sub:hover{
 			> .main-sub-menu {
 				left:auto;
@@ -44,10 +46,15 @@
 		font-family:$light;
 		text-decoration: none;
 		text-decoration: none;
-	    display: block;
-    	padding: 28px 22px 29px 22px;	
+	    display:flex;
+		align-items:center;
+    	padding: 0 22px;	
     	color:$black;
-    	text-shadow: 1px 1px 1px #000;
+    	line-height: 1.2;
+    	min-height: 80px;
+    	&__inner{
+			display:block;
+    	}
     }
 }
 .main-sub-menu{

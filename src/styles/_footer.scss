@@ -1,6 +1,8 @@
 .site-footer{
 	background-color: $dark1;
 	padding-bottom: 55px;
+	color:$white;
+	font-family:$light;
 	&:before{
 		content:'';
 		display:block;
@@ -26,13 +28,37 @@
 	}
 }
 .footer-menu{
-	margin:0;
+	margin:0 0 0 -20px;
 	padding: 0;
 	display:flex;
 	flex-wrap:wrap;
+	flex-direction: column;
+	@media only screen and (min-width: $medium){
+		flex-direction: row;
+	}
 	&__item{
 		margin:0;
 		padding: 0;
 		list-style: none;
+		position:relative;
+		&:after{
+			content: '';
+			position:absolute;
+			right:0;
+			top:8px;
+			background-color:$dark3;
+			width:1px;
+			display:none;
+			height:1em;
+			@media only screen and (min-width: $medium){
+				display:block;
+			}
+		}
+	}
+	&__lnk{
+		color:$white;
+		text-decoration:none;
+		padding: 4px 20px;
+    	display: block;
 	}
 }
