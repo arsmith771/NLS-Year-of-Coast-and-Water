@@ -4,6 +4,9 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+*:focus{
+		outline:thin dotted;
+}
 body{
 	background-color: $white;
 	color: $black;
@@ -29,9 +32,4 @@ img{
 	max-width:100%;
 	height:auto;
 }
-input:focus,
-textarea:focus,
-a:focus,
-button:focus {
-	outline:thin dotted;
-}
+

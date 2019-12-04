@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/jquery.fancybox.min.css">
     <title>From shore to shore - Eadar Cladaichian, Roon the Shores</title>
     <meta name="description" content="">
   </head>
@@ -18,18 +19,18 @@
           <h1 class="site-header__site-title"><span class="site-header__site-title__main">From shore to shore </span><span class="site-header__site-title__sub"><span class="site-header__site-title__sub__first">Eadar Cladaichian</span> Roon the Shores</span></h1>
           <nav class="main-nav" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
             <button  class="main-nav__toggle" id="main-nav__toggle">Menu</button>
-            <ul class="main-menu" id="main-menu">
-              <li class="main-menu__item"><a href="#" class="main-menu__lnk">About the collection</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__lnk">The photographers</a></li>
-              <li class="main-menu__item main-menu__item--has-sub"><a href="#" class="main-menu__lnk">Locations</a>
+             <ul class="main-menu" id="main-menu">
+              <li class="main-menu__item"><a href="../../about-the-collection/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">About the collection</span></a></li>
+              <li class="main-menu__item"><a href="../../the-photographers/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">The photographers</span></a></li>
+              <li class="main-menu__item main-menu__item--has-sub"><a href="../../locations/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">Locations</span></a>
                 <ul class="main-sub-menu" id="main-sub-menu">
-                  <li class="main-sub-menu__item"><a href="#" class="main-menu__lnk">East</a></li>
-                  <li class="main-sub-menu__item"><a href="#" class="main-menu__lnk">West</a></li>
-                  <li class="main-sub-menu__item"><a href="#" class="main-menu__lnk">North</a></li>
+                  <li class="main-sub-menu__item"><a href="../east/index.html" class="main-sub-menu__lnk">East</a></li>
+                  <li class="main-sub-menu__item"><a href="../west/index.html" class="main-sub-menu__lnk">West</a></li>
+                  <li class="main-sub-menu__item"><a href="index.html" class="main-sub-menu__lnk">North</a></li>
                 </ul>
               </li>
-              <li class="main-menu__item"><a href="#" class="main-menu__lnk">Living memories</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__lnk">Resources</a></li>
+              <li class="main-menu__item"><a href="../../living-memories/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">Living memories</span></a></li>
+              <li class="main-menu__item"><a href="../../resources/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">Resources</span></a></li>
             </ul>
           </nav>
           </div>
@@ -47,22 +48,42 @@
         <div class="wrap">
           <section class="main-content__overlayed">
             <div class="main-content__page-intro">
-              <div class="main-content__page-intro__text"><div class="breadcrumbs"><a href="../../index.html">Home</a><a href="../index.html">Locations</a><a>West</a></div>
+              <div class="main-content__page-intro__text">
+               <div class="breadcrumbs">
+                  <a href="../../index.html" class="breadcrumbs__item breadcrumbs__item--lnk">Home</a>
+                  <a class="breadcrumbs__item">Locations</a>
+                  <a class="breadcrumbs__item">West</a>
+                </div>
                 
                 <h2>West</h2>
-                <p>Ballantrae         Girvan         Dunure         Ayr         Saltcoats         Ardrossan         Portencross         Glasgow         Tarbert         Ardrishaig         Oban         Sound of Mull         Staffa         
-Kyel of Lochalsh         South Uist         St Kilda         Stornoway </p>
+                  <ul class="main-content__page-intro__places">
+                    <li class="main-content__page-intro__places__item">Ballantrae</li>         
+                    <li class="main-content__page-intro__places__item">Girvan</li>             
+                    <li class="main-content__page-intro__places__item">Dunure</li>          
+                    <li class="main-content__page-intro__places__item">Ayr</li>        
+                    <li class="main-content__page-intro__places__item">Saltcoats</li>            
+                    <li class="main-content__page-intro__places__item">Ardrossan</li>            
+                    <li class="main-content__page-intro__places__item">Portencross</li>           
+                    <li class="main-content__page-intro__places__item">Glasgow</li>            
+                    <li class="main-content__page-intro__places__item">Tarbert</li>             
+                    <li class="main-content__page-intro__places__item">Ardrishaig  </li>           
+                    <li class="main-content__page-intro__places__item">Oban</li>            
+                    <li class="main-content__page-intro__places__item">Sound of Mull</li>          
+                    <li class="main-content__page-intro__places__item">Staffa</li>           
+                    <li class="main-content__page-intro__places__item">Kyle of Lochalsh</li>            
+                    <li class="main-content__page-intro__places__item">South Uist</li>        
+                    <li class="main-content__page-intro__places__item">St Kilda</li>        
+                    <li class="main-content__page-intro__places__item">Stornoway</li>        
+                  </ul>
               </div>
               <a href="">
                 <figure class="main-content__page-intro__fig">
-                  <img class="main-content__page-intro__img" src="../../images/home-map-west.svg" alt="" width="172" height="172">
-                  <figcaption>View locations on a map</figcaption>
+                  <img class="main-content__page-intro__img" src="../../images/west-icon.svg" alt="" width="172" height="172">
+                  <figcaption class="main-content__page-intro__caption">View locations on a map</figcaption>
                 </figure>
               </a>
             </div>
-            <div class="main-content__gallery">
-              gallery
-            </div>
+            <div id="app" class="gallery"><a class="gallery__cta" href="../../images/0036.jpg" data-fancybox="gallery" data-caption="Ballantrae,  Ballantrae"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0036-thumb.jpg" alt="Ballantrae" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Ballantrae</figcaption></figure></a><a class="gallery__cta" href="../../images/0037.jpg" data-fancybox="gallery" data-caption="Girvan Coast,  Girvan, George Washington Wilson"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0037-thumb.jpg" alt="Girvan Coast" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Girvan Coast</figcaption></figure></a><a class="gallery__cta" href="../../images/0038.jpg" data-fancybox="gallery" data-caption="Lifeboat, Girvan,  Girvan, George Washington Wilson"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0038-thumb.jpg" alt="Lifeboat, Girvan" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Lifeboat, Girvan</figcaption></figure></a><a class="gallery__cta" href="../../images/0039.jpg" data-fancybox="gallery" data-caption="Girvan Herring fishery,  Girvan"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0039-thumb.jpg" alt="Girvan Herring fishery" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Girvan Herring fishery</figcaption></figure></a><a class="gallery__cta" href="../../images/0040.jpg" data-fancybox="gallery" data-caption="Girvan Harbour and Ailsa Craig,  Girvan"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0040-thumb.jpg" alt="Girvan Harbour and Ailsa Craig" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Girvan Harbour and Ailsa Craig</figcaption></figure></a><a class="gallery__cta" href="../../images/0041.jpg" data-fancybox="gallery" data-caption="Dunure Castle,  Dunure"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0041-thumb.jpg" alt="Dunure Castle" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Dunure Castle</figcaption></figure></a><a class="gallery__cta" href="../../images/0042.jpg" data-fancybox="gallery" data-caption="Ayr,  Ayr"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0042-thumb.jpg" alt="Ayr" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Ayr</figcaption></figure></a><a class="gallery__cta" href="../../images/0043.jpg" data-fancybox="gallery" data-caption="Peaks of Arran from Saltcoats,  Saltcoats"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0043-thumb.jpg" alt="Peaks of Arran from Saltcoats" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Peaks of Arran from Saltcoats</figcaption></figure></a><a class="gallery__cta" href="../../images/0044.jpg" data-fancybox="gallery" data-caption="The Harbour, Ardrossan,  Ardrossan, James Valentine"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0044-thumb.jpg" alt="The Harbour, Ardrossan" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">The Harbour, Ardrossan</figcaption></figure></a><a class="gallery__cta" href="../../images/0045.jpg" data-fancybox="gallery" data-caption="At the Harbour, Ardrossan,  Ardrossan, James Valentine"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0045-thumb.jpg" alt="At the Harbour, Ardrossan" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">At the Harbour, Ardrossan</figcaption></figure></a><a class="gallery__cta" href="../../images/0046.jpg" data-fancybox="gallery" data-caption="Portencross Castle,  Portencross"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0046-thumb.jpg" alt="Portencross Castle" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Portencross Castle</figcaption></figure></a><a class="gallery__cta" href="../../images/0047.jpg" data-fancybox="gallery" data-caption="Shipbuilding, John Brown &amp; Co, Glasgow, 1932, Glasgow, Unknown"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0047-thumb.jpg" alt="Shipbuilding, John Brown &amp; Co, Glasgow" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Shipbuilding, John Brown &amp; Co, Glasgow</figcaption></figure></a><a class="gallery__cta" href="../../images/0048.jpg" data-fancybox="gallery" data-caption="At the Broomielaw, Glasgow, 1860s-1880s, Glasgow, George Washington Wilson"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0048-thumb.jpg" alt="At the Broomielaw, Glasgow" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">At the Broomielaw, Glasgow</figcaption></figure></a><a class="gallery__cta" href="../../images/0049.jpg" data-fancybox="gallery" data-caption="Tarbert from the South,  Tarbert"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0049-thumb.jpg" alt="Tarbert from the South" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Tarbert from the South</figcaption></figure></a><a class="gallery__cta" href="../../images/0050.jpg" data-fancybox="gallery" data-caption="SS Columba at Ardrishaig,  Ardrishaig"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0050-thumb.jpg" alt="SS Columba at Ardrishaig" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">SS Columba at Ardrishaig</figcaption></figure></a><a class="gallery__cta" href="../../images/0051.jpg" data-fancybox="gallery" data-caption="Oban from SW,  Oban"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0051-thumb.jpg" alt="Oban from SW" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Oban from SW</figcaption></figure></a><a class="gallery__cta" href="../../images/0052.jpg" data-fancybox="gallery" data-caption="Sound of Mull,  Sound of Mull"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0052-thumb.jpg" alt="Sound of Mull" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Sound of Mull</figcaption></figure></a><a class="gallery__cta" href="../../images/0053.jpg" data-fancybox="gallery" data-caption="Iona Cathedral and St Ronan's Chapel,  Iona"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0053-thumb.jpg" alt="Iona Cathedral and St Ronan's Chapel" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Iona Cathedral and St Ronan's Chapel</figcaption></figure></a><a class="gallery__cta" href="../../images/0054.jpg" data-fancybox="gallery" data-caption="Clamshell Cave, Staffa, 1870s, Staffa, James Valentine"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0054-thumb.jpg" alt="Clamshell Cave, Staffa" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Clamshell Cave, Staffa</figcaption></figure></a><a class="gallery__cta" href="../../images/0055.jpg" data-fancybox="gallery" data-caption="Ferry Boat at Kyle of Lochalsh,  Kyle of Lochalsh"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0055-thumb.jpg" alt="Ferry Boat at Kyle of Lochalsh" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Ferry Boat at Kyle of Lochalsh</figcaption></figure></a><a class="gallery__cta" href="../../images/0056.jpg" data-fancybox="gallery" data-caption="Making Kelp, South Uist,  South Uist"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0056-thumb.jpg" alt="Making Kelp, South Uist" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Making Kelp, South Uist</figcaption></figure></a><a class="gallery__cta" href="../../images/0056.jpg" data-fancybox="gallery" data-caption="Spot where Bonnie Prince Charlie landed 1745, South Uist,  South Uist"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0056-thumb.jpg" alt="Spot where Bonnie Prince Charlie landed 1745, South Uist" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Spot where Bonnie Prince Charlie landed 1745, South Uist</figcaption></figure></a><a class="gallery__cta" href="../../images/0058.jpg" data-fancybox="gallery" data-caption="St Kilda,  St Kilda"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0058-thumb.jpg" alt="St Kilda" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">St Kilda</figcaption></figure></a><a class="gallery__cta" href="../../images/0059.jpg" data-fancybox="gallery" data-caption="St Kilda,  St Kilda"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0059-thumb.jpg" alt="St Kilda" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">St Kilda</figcaption></figure></a><a class="gallery__cta" href="../../images/0060.jpg" data-fancybox="gallery" data-caption="Barking the nets, Stornoway,  Stornoway"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0060-thumb.jpg" alt="Barking the nets, Stornoway" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Barking the nets, Stornoway</figcaption></figure></a></div>
           </section>
 
 
@@ -90,11 +111,38 @@ Kyel of Lochalsh         South Uist         St Kilda         Stornoway </p>
           <p>&copy;National Library of Scotland 2019</p>
         </div>
       </footer>
+      <!--<script>
+        var xmlhttp = new XMLHttpRequest();
+        var url = "west-gallery.json";
 
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            myFunction(myArr);
+          }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+
+        function myFunction(arr) {
+          var out = "";
+          var i;
+          
+          for(i = 0; i < arr.length; i++) {
+
+            out += '<a class="gallery__cta" href="../../images/' + arr[i].Image + '" data-fancybox="gallery" data-caption="' + arr[i].Caption + ', ' + arr[i].Date + ', ' + arr[i].Location  + ', ' + arr[i].Maker + '"><figure class="gallery__fig" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><img class="gallery__thumb"  src="../../images/' + arr[i].Image + '" alt="' + arr[i].Caption + '" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">' + arr[i].Caption + '</figcaption></figure></a>';
+            }
+          
+          document.getElementById("app").innerHTML = out;
+        }
+
+      </script>-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+    <script src="../../scripts/jquery-3.4.1.min.js"></script>
+    <script src="../../scripts/jquery.fancybox.min.js"></script>
   </body>
 </html>

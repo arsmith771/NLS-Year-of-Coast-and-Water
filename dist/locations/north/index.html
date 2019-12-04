@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/jquery.fancybox.min.css">
     <title>From shore to shore - Eadar Cladaichian, Roon the Shores</title>
     <meta name="description" content="">
   </head>
@@ -18,18 +19,18 @@
           <h1 class="site-header__site-title"><span class="site-header__site-title__main">From shore to shore </span><span class="site-header__site-title__sub"><span class="site-header__site-title__sub__first">Eadar Cladaichian</span> Roon the Shores</span></h1>
           <nav class="main-nav" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
             <button  class="main-nav__toggle" id="main-nav__toggle">Menu</button>
-            <ul class="main-menu" id="main-menu">
-              <li class="main-menu__item"><a href="#" class="main-menu__lnk">About the collection</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__lnk">The photographers</a></li>
-              <li class="main-menu__item main-menu__item--has-sub"><a href="#" class="main-menu__lnk">Locations</a>
+             <ul class="main-menu" id="main-menu">
+              <li class="main-menu__item"><a href="../../about-the-collection/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">About the collection</span></a></li>
+              <li class="main-menu__item"><a href="../../the-photographers/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">The photographers</span></a></li>
+              <li class="main-menu__item main-menu__item--has-sub"><a href="../../locations/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">Locations</span></a>
                 <ul class="main-sub-menu" id="main-sub-menu">
-                  <li class="main-sub-menu__item"><a href="#" class="main-menu__lnk">East</a></li>
-                  <li class="main-sub-menu__item"><a href="#" class="main-menu__lnk">West</a></li>
-                  <li class="main-sub-menu__item"><a href="#" class="main-menu__lnk">North</a></li>
+                  <li class="main-sub-menu__item"><a href="../east/index.html" class="main-sub-menu__lnk">East</a></li>
+                  <li class="main-sub-menu__item"><a href="../west/index.html" class="main-sub-menu__lnk">West</a></li>
+                  <li class="main-sub-menu__item"><a href="index.html" class="main-sub-menu__lnk">North</a></li>
                 </ul>
               </li>
-              <li class="main-menu__item"><a href="#" class="main-menu__lnk">Living memories</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__lnk">Resources</a></li>
+              <li class="main-menu__item"><a href="../../living-memories/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">Living memories</span></a></li>
+              <li class="main-menu__item"><a href="../../resources/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">Resources</span></a></li>
             </ul>
           </nav>
           </div>
@@ -48,20 +49,27 @@
           <section class="main-content__overlayed">
             <div class="main-content__page-intro">
               <div class="main-content__page-intro__text">
-                <div class="breadcrumbs"><a href="../../index.html">Home</a><a href="../index.html">Locations</a><a>North</a></div>
+                <div class="breadcrumbs">
+                  <a href="../../index.html" class="breadcrumbs__item breadcrumbs__item--lnk">Home</a>
+                  <a class="breadcrumbs__item">Locations</a>
+                  <a class="breadcrumbs__item">North</a>
+                </div>
                 <h2>North</h2>
-                <p>Shetland         Orkney         Pentland Firth         Wick</p>
+                <ul class="main-content__page-intro__places">
+                  <li class="main-content__page-intro__places__item">Shetland</li>         
+                  <li class="main-content__page-intro__places__item">Orkney</li>         
+                  <li class="main-content__page-intro__places__item">Pentland Firth</li>         
+                  <li class="main-content__page-intro__places__item">Wick</li>
+                </ul>
               </div>
               <a href="">
                 <figure class="main-content__page-intro__fig">
-                  <img class="main-content__page-intro__img" src="../../images/home-map-north.svg" alt="" width="172" height="172">
-                  <figcaption>View locations on a map</figcaption>
+                  <img class="main-content__page-intro__img" src="../../images/north-icon.svg" alt="" width="172" height="172">
+                  <figcaption class="main-content__page-intro__caption">View locations on a map</figcaption>
                 </figure>
               </a>
             </div>
-            <div class="main-content__gallery">
-              gallery
-            </div>
+            <div id="app" class="gallery"><a class="gallery__cta" href="../../images/0001.jpg" data-fancybox="gallery" data-caption="View from Muckle Head of Balta Sound,  Unst, Shetland"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0001-thumb.jpg" alt="View from Muckle Head of Balta Sound" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">View from Muckle Head of Balta Sound</figcaption></figure></a><a class="gallery__cta" href="../../images/0002.jpg" data-fancybox="gallery" data-caption="Kurka Stack, Island of Balta, Shetland, 1860s-1880s, Balta Island, Shetland, George Washington Wilson"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0002-thumb.jpg" alt="Kurka Stack, Island of Balta, Shetland" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Kurka Stack, Island of Balta, Shetland</figcaption></figure></a><a class="gallery__cta" href="../../images/0003.jpg" data-fancybox="gallery" data-caption="Scalloway from N,  Scalloway, Shetland"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0003-thumb.jpg" alt="Scalloway from N" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Scalloway from N</figcaption></figure></a><a class="gallery__cta" href="../../images/0004.jpg" data-fancybox="gallery" data-caption="Bressay Lighthouse, Lerwick,  Lerwick"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0004-thumb.jpg" alt="Bressay Lighthouse, Lerwick" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Bressay Lighthouse, Lerwick</figcaption></figure></a><a class="gallery__cta" href="../../images/0005.jpg" data-fancybox="gallery" data-caption="Ness of Sound , Lerwick,  Lerwick, Shetland"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0005-thumb.jpg" alt="Ness of Sound , Lerwick" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Ness of Sound , Lerwick</figcaption></figure></a><a class="gallery__cta" href="../../images/0006.jpg" data-fancybox="gallery" data-caption="Lerwick from Town Hall,  Lerwick"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0006-thumb.jpg" alt="Lerwick from Town Hall" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Lerwick from Town Hall</figcaption></figure></a><a class="gallery__cta" href="../../images/0007.jpg" data-fancybox="gallery" data-caption="Rackwick Moa, Rapness, Westray, Orkney, Early 20th century, Westray, Orkney, Unknown"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0007-thumb.jpg" alt="Rackwick Moa, Rapness, Westray, Orkney" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Rackwick Moa, Rapness, Westray, Orkney</figcaption></figure></a><a class="gallery__cta" href="../../images/0008.jpg" data-fancybox="gallery" data-caption="Sacquoy Head, Rousay, Orkney, 1860s-1880s, Orkney, George Washington Wilson"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0008-thumb.jpg" alt="Sacquoy Head, Rousay, Orkney" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Sacquoy Head, Rousay, Orkney</figcaption></figure></a><a class="gallery__cta" href="../../images/0009.jpg" data-fancybox="gallery" data-caption="Stenness Fishing Village,  Orkney"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0009-thumb.jpg" alt="Stenness Fishing Village" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Stenness Fishing Village</figcaption></figure></a><a class="gallery__cta" href="../../images/0010.jpg" data-fancybox="gallery" data-caption="Stromness from NE,  Orkney"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0010-thumb.jpg" alt="Stromness from NE" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Stromness from NE</figcaption></figure></a><a class="gallery__cta" href="../../images/0011.jpg" data-fancybox="gallery" data-caption="Stromness from South,  Orkney"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0011-thumb.jpg" alt="Stromness from South" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Stromness from South</figcaption></figure></a><a class="gallery__cta" href="../../images/0012.jpg" data-fancybox="gallery" data-caption="Old Man of Hoy,  Orkney"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0012-thumb.jpg" alt="Old Man of Hoy" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Old Man of Hoy</figcaption></figure></a><a class="gallery__cta" href="../../images/0013.jpg" data-fancybox="gallery" data-caption="Pentland Firth from Duncansby Head,  Pentland Firth"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0013-thumb.jpg" alt="Pentland Firth from Duncansby Head" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Pentland Firth from Duncansby Head</figcaption></figure></a><a class="gallery__cta" href="../../images/0014.jpg" data-fancybox="gallery" data-caption="Wick Harbour, The Herring Season, 1860s-1880s, Wick, George Washington Wilson"><figure class="gallery__fig" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><img class="gallery__thumb" src="../../images/0014-thumb.jpg" alt="Wick Harbour, The Herring Season" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">Wick Harbour, The Herring Season</figcaption></figure></a></div>
           </section>
 
 
@@ -71,29 +79,56 @@
       <footer class="site-footer" itemscope="" itemtype="https://schema.org/WPFooter">
         <div class="wrap">
           <ul class="partner-logos">
-            <li class="partner-logos__item"></li>
-            <li class="partner-logos__item"></li>
-            <li class="partner-logos__item"></li>
-            <li class="partner-logos__item"></li>
-            <li class="partner-logos__item"></li>
-            <li class="partner-logos__item"></li>
+            <li class="partner-logos__item"><img src="../../images/national-galleries-logo.svg" width="74" height="55"></li>
+            <li class="partner-logos__item"><img src="../../images/nls-logo.svg" width="120" height="48"></li>
+            <li class="partner-logos__item"><img src="../../images/heritage-fund-logo.svg" width="113" height="56"></li>
+            <li class="partner-logos__item"><img src="../../images/scottish-gov-logo.svg" width="155" height="28"></li>
+            <li class="partner-logos__item"><img src="../../images/artfund-logo.svg" width="114" height="24"></li>
+            <li class="partner-logos__item"><img src="../../images/coast-and-waters-logo.svg" width="58" height="40"></li>
           </ul>
           <nav itemscope="" itemtype="https://schema.org/SiteNavigationElement">
             <ul class="footer-menu">
-              <li class="footer-menu__item"><a href="https://www.nls.uk/">NLS home page</a></li>
-              <li class="footer-menu__item"><a href="https://www.nls.uk/learning-zone">NLS Learning Zone</a></li>
-              <li class="footer-menu__item"><a href="https://www.nls.uk/contact">NLS Contact us</a></li>
-              <li class="footer-menu__item"><a href="#">Accessibility</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__lnk" href="https://www.nls.uk/">NLS home page</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__lnk" href="https://www.nls.uk/learning-zone">NLS Learning Zone</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__lnk"href="https://www.nls.uk/contact">NLS Contact us</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__lnk" href="#">Accessibility</a></li>
             </ul>
           </nav>
           <p>&copy;National Library of Scotland 2019</p>
         </div>
       </footer>
+      <!--<script>
+        var xmlhttp = new XMLHttpRequest();
+        var url = "north-gallery.json";
 
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            myFunction(myArr);
+          }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+
+        function myFunction(arr) {
+          var out = "";
+          var i;
+          
+          for(i = 0; i < arr.length; i++) {
+
+            out += '<a class="gallery__cta" href="../../images/' + arr[i].Image + '" data-fancybox="gallery" data-caption="' + arr[i].Caption + ', ' + arr[i].Date + ', ' + arr[i].Location  + ', ' + arr[i].Maker + '"><figure class="gallery__fig" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><img class="gallery__thumb"  src="../../images/' + arr[i].Image + '" alt="' + arr[i].Caption + '" itemprop="thumbnail"><figcaption class="gallery__caption" itemprop="caption">' + arr[i].Caption + '</figcaption></figure></a>';
+            }
+          
+          document.getElementById("app").innerHTML = out;
+        }
+
+      </script>-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+    <script src="../../scripts/jquery-3.4.1.min.js"></script>
+    <script src="../../scripts/jquery.fancybox.min.js"></script>
   </body>
 </html>

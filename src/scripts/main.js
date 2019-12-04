@@ -54,10 +54,38 @@ function hideOverlay(){
 
 }
 
+function tabMenu(){
+
+	jQuery('.main-menu__item--has-sub').on('focus', function(){
+
+		jQuery('.main-sub-menu').css('top','80px');
+	});
+
+	jQuery('.main-sub-menu__lnk:last').on('focus', function(){
+
+		jQuery('.main-sub-menu').css('top','80px');
+	});
+
+	/*
+	jQuery('.main-sub-menu__lnk:last').on('blur', function(){
+
+		jQuery('.main-sub-menu').removeAttr('style');
+	});
+	*/
+	jQuery('#xxx').on('focus', function(){
+
+		jQuery('.main-sub-menu').removeAttr('style');
+	});
+	jQuery('#yyy').on('focus', function(){
+
+		jQuery('.main-sub-menu').removeAttr('style');
+	});
+}
+
 jQuery(document).ready(function(){
 
 	showOverlay();
-	
+	tabMenu();
 	ctrlMedia('#open-video-1', 'awa-tae-the-sea');
 	hideOverlay();
 

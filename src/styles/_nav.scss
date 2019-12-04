@@ -23,11 +23,10 @@
 		list-style: none;	
 		display:flex;
 		align-items:center;
-		&--has-sub:hover{
+		&--has-sub:hover {
 			> .main-sub-menu {
-				left:auto;
-			}
-			
+				top:80px;
+			}	
 			&:after{
 				content:'';
 				display:block;
@@ -59,8 +58,8 @@
 }
 .main-sub-menu{
 	position:absolute;
-	top:auto;
-	left:-9999em;
+	top:-200px;
+	left:auto;
 	margin:0;
 	padding:0;
 	z-index: 2;
