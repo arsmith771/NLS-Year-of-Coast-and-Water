@@ -241,6 +241,10 @@
 			background-size: 110% 110%;
     		background-position: -10px -10px;
 		}
+		&--pdlr{
+			padding-left:10px;
+			padding-right:10px;
+		}
 	}
 	&__cta{
 		text-decoration: none;
@@ -252,10 +256,21 @@
 		padding:0;
 		font-family:$bold;
 		color:$dark2;
+		line-height: 1.2;
+		min-height: 4em;
 	}
 	&__def{
 		margin:0;
 		padding:0;
+	}
+	&__video{
+		background-image: url('../images/net-2.svg');
+		background-size:100% 100%;
+		display:inline-block;
+		width:198px;
+		height:198px;
+		text-indent: -999em;
+		overflow:hidden;
 	}
 	&__area{
 		display:block;

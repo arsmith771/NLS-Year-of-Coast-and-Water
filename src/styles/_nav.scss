@@ -4,7 +4,17 @@
 		margin:0 auto;
 	}
 	&__toggle{
-		display:block;
+		display: inline-block;
+		position:absolute;
+		right:30px;
+		top:18px;
+		background-image: url('../images/hamburger.svg');
+		background-size:100% auto;
+		background-color:transparent;
+		width:47px;
+		height:39px;
+		border: 0;
+		cursor:pointer;
 		@media only screen and (min-width: $large){
 			display:none;
 		}
@@ -74,7 +84,14 @@
 		font-family:$light;
 		display:block;
 		padding: 10px 40px;
+		position:relative;
 
 	}
 
 }
+.main-menu__item:hover a {
+    
+  //  text-shadow: 2px 2px 0 $black;
+    font-family:$semibold;
+}
+ 
