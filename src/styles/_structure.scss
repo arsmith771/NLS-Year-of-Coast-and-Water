@@ -115,6 +115,7 @@
 		box-shadow: 0px 0px 18px rgba(0,0,0,0.2);
 		display:flex;
 		justify-content: space-between;
+		margin-bottom: 60px;
 		&__places{
 			font-family:$light;
 			font-size:32px;
@@ -311,6 +312,7 @@
 	}
 	&__cta{
 		display:block;
+		color:$blue2;
 	}
 
 	&__figure{
@@ -318,11 +320,32 @@
 		padding:0;
 		display:flex;
 		justify-content:flex-start;
-		flex-wrap:wrap;
+		align-items:flex-start;
+		flex-wrap: nowrap;
 	}
 	&__img{
 		display:block;
 		margin-right:28px;
+	}
+	&__text{
+		a {
+			color:$blue2;
+		}
+		&__p1{
+			margin-top:0;
+		}
+	}
+}
+.useful-links{
+	margin:0;
+	padding:0;
+	&__item{
+		margin:0 0 2em 0;
+		padding:0;	
+		list-style:none;
+		a{
+			color:$blue2;
+		}
 	}
 }
 .overlay{
@@ -332,7 +355,7 @@
 	bottom: 0;
 	top:0;
 	z-index: 100;
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.9);
 	display:none;
 	justify-content:center;
 	align-items:center;
@@ -341,9 +364,14 @@
 	}
 	&__close{
 		position:fixed;
-		top:0;
-		right:0;
+		top:10px;
+		right:20px;
 		z-index: 101;
+		font-family:$semibold;
+		background:none;
+		border: 0;
+		font-size:20px;
+		cursor:pointer;
 	}
 }
 .media{

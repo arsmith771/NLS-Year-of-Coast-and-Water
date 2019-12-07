@@ -54,6 +54,11 @@
 				display:block;
 			}
 		}
+		&:last-child:after{
+			@media only screen and (min-width: $medium){
+				display:none;
+			}
+		}
 	}
 	&__lnk{
 		color:$white;

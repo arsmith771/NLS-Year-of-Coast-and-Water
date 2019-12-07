@@ -107,8 +107,8 @@
 	&:before{
 		position:absolute;
 		content: '';
-		left: 40%;
-    	top: -10px;
+		left: calc(50% - 17px);
+    	top: -7px;
 		display:block;
 	    width:15px;
 	    height:15px;
