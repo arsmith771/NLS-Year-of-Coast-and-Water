@@ -60,5 +60,8 @@
 		text-decoration:none;
 		padding: 4px 20px;
     	display: block;
+    	&:hover{
+			text-decoration: underline;
+    	}
 	}
 }

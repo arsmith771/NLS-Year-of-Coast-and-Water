@@ -193,12 +193,13 @@
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	margin-left:-10px;
-	margin-top: 10px;
+	margin-top: 15px;
 	&__item{
 		padding-left:10px;
 		padding-right: 10px;
 		text-decoration:none;
 		position:relative;
+		color:$black;
 		&:after{
 				content:'';
 				display:block;
@@ -244,6 +245,7 @@
 		&--pdlr{
 			padding-left:10px;
 			padding-right:10px;
+			padding-bottom:30px;
 		}
 	}
 	&__cta{
@@ -254,10 +256,10 @@
 	&__title{
 		margin: 0 0 10px;
 		padding:0;
-		font-family:$bold;
+		font-family:$semibold;
 		color:$dark2;
 		line-height: 1.2;
-		min-height: 4em;
+		
 	}
 	&__def{
 		margin:0;
@@ -271,6 +273,17 @@
 		height:198px;
 		text-indent: -999em;
 		overflow:hidden;
+		    margin-bottom: 10px;
+	}
+	&__audio{
+		background-image: url('../images/net-1.svg');
+		background-size:100% 100%;
+		display:inline-block;
+		width:198px;
+		height:198px;
+		text-indent: -999em;
+		overflow:hidden;
+		    margin-bottom: 10px;
 	}
 	&__area{
 		display:block;
@@ -278,6 +291,14 @@
     	margin: 10px auto 0 auto;
     	font-size:14px;
     	line-height:1.2;
+	}
+}
+.media-control{
+	&__cta{
+		font-family:$semibold;
+	}
+	&__title{
+		min-height: 4em;
 	}
 }
 .resources-list{
@@ -301,7 +322,7 @@
 	}
 	&__img{
 		display:block;
-		border:2px solid;
+		margin-right:28px;
 	}
 }
 .overlay{

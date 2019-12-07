@@ -1,5 +1,9 @@
 .site-header{
 	//min-height:80px;
+	border-bottom:10px solid $dark2;
+	&--no-bdr{
+		border-bottom:none;
+	}
 	&__site-title{
 		width:318px;
 		height:63px;
