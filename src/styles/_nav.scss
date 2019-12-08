@@ -6,7 +6,7 @@
 	&__toggle{
 		display: inline-block;
 		position:absolute;
-		right:30px;
+		right: 5%;
 		top:18px;
 		background-image: url('../images/hamburger.svg');
 		background-size:100% auto;
@@ -31,8 +31,11 @@
 		margin:0;
 		padding:0;
 		list-style: none;	
-		display:flex;
+		display:block;
 		align-items:center;
+		@media only screen and (min-width: $large){
+			display:flex;
+		}
 		&--has-sub:hover {
 			> .main-sub-menu {
 				top:80px;
@@ -59,12 +62,16 @@
 		text-decoration: none;
 	    display:flex;
 		align-items:center;
-    	padding: 0 22px;	
+    	padding: 0;	
     	color:$black;
     	line-height: 1.2;
-    	min-height: 80px;
+    	min-height: 50px;
     	position: relative;
     	overflow:hidden;
+    	@media only screen and (min-width: $large){
+			padding: 0 22px;
+			min-height: 80px;
+    	}
     	&:before{
 			content:'';
 			position:absolute;

@@ -114,8 +114,12 @@
 		background-color: $white;
 		box-shadow: 0px 0px 18px rgba(0,0,0,0.2);
 		display:flex;
+		flex-direction: column;
 		justify-content: space-between;
 		margin-bottom: 60px;
+		@media only screen and (min-width: $large){
+			    flex-direction: row;
+		}
 		&__places{
 			font-family:$light;
 			font-size:32px;
@@ -167,13 +171,17 @@
 		&__fig{
 			margin:0;
 			padding:15px 28px 14px 28px;
-			background-image:url('../images/barr-lines.png');
+			text-align: center;
+			background:none;
+			@media only screen and (min-width: $large){
+				background-image:url('../images/barr-lines.png');
+			}
 			@include bar;
 			@include dropShad;
 
 		}
 		&__img{
-			max-width: none; 
+			//max-width: none; 
 		}
 		&__text{
 			margin-left: 7.5%;

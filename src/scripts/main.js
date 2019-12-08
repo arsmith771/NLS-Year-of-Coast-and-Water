@@ -82,11 +82,23 @@ function tabMenu(){
 	});
 }
 
+function toggleResponsiveMenu(){
+
+	var menu = jQuery('#main-menu'),
+		btn = jQuery('#main-nav__toggle');
+
+	btn.on('click', function(){
+
+		menu.slideToggle();
+	});
+}
+
 jQuery(document).ready(function(){
 
 	showOverlay();
 	tabMenu();
 	ctrlMedia('#open-video-1', 'awa-tae-the-sea');
 	hideOverlay();
+	toggleResponsiveMenu();
 
 });
