@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<base href="https://geo.nls.uk/maps/mackinnon/">
+		<title>Mackinnon photos - demo viewer</title>
+
+	    	<link type="text/css" rel="stylesheet" href="css/bootstrap-slider.css" media="screen" />
+
+
+		<!-- specific css to this map -->
+		<link type="text/css" rel="stylesheet" href="css/maincss.css" media="screen" /> 
+		<!-- OpenLayers css -->
+		<link type="text/css" rel="stylesheet" href="css/ol.css" media="screen" /> 
+
+        </head>
+
+	<body>
+
+	    <div id="header">
+
+
+		<div id="headertitle">	<h1>Mackinnon photos - demo viewer</h1>
+		<h2>(this header doesn't need to be in the final application)</h2>
+	    	</div>
+	    </div>
+
+
+	<div id="sidebar">
+
+	      <h4>Change transparency of Ordnance Survey 1900s map overlay:</h4>
+	      <p class="infomapslider">
+	        <input id="mapslider" data-slider-id='mapsslider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+	      </p>
+	      <br/>
+	      <h4>Choose a background map:</h4>
+      		<div id="overlaylayerSelect" >
+        	</select>
+      		</div>
+    	</div>
+		
+	    	
+	     <div id="map" class="map">
+
+			<div id="scalebar"></div>
+	     </div>
+
+		
+		<div id="resultsSideBar">
+			<div id="resultsheader"></div>
+			<div id="results"></div>
+		</div>
+
+		<!-- JQuery Javascript -->
+		
+ 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  		<script type="text/javascript" src="scripts/bootstrap-slider.js"></script>
+
+
+
+		
+		<!-- proj4 Javascript for projection information -->
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.5.0/proj4.js"></script>
+
+
+		<!-- OpenLayers Javascript - use ol-debug.js for debugging and ol.js for releasing when finished -->
+
+	        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js"></script>
+
+		<!-- Our specific Javascript for this map -->
+
+		<script type="text/javascript" src="scripts/index.js?v=20191128"></script> 
+
+		<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2673032-4', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+

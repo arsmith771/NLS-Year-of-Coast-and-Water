@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link type="text/css" rel="stylesheet" href="../styles/bootstrap-slider.css" media="screen" />
+
+
+    <!-- specific css to this map -->
+    <link type="text/css" rel="stylesheet" href="../styles/maincss.css" media="screen" /> 
+    <!-- OpenLayers css -->
+    <link type="text/css" rel="stylesheet" href="../styles/ol.css" media="screen" /> 
+
+    <title>From shore to shore - Eadar Cladaichian, Roon the Shores</title>
+    <meta name="description" content="">
+  </head>
+  <body itemscope="" itemtype="https://schema.org/WebPage">
+   
+      <main class="main-content">
+     
+          <section>
+              
+
+
+
+
+
+
+        
+
+
+
+  
+
+
+ <div id="sidebar">
+
+        <h4>Change transparency of Ordnance Survey 1900s map overlay:</h4>
+        <p class="infomapslider">
+          <input id="mapslider" data-slider-id='mapsslider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+        </p>
+        <br/>
+        <h4>Choose a background map:</h4>
+          <div id="overlaylayerSelect" >
+          </select>
+          </div>
+      </div>
+    
+        
+       <div id="map" class="map">
+
+      <div id="scalebar"></div>
+       </div>
+
+    
+    <div id="resultsSideBar">
+      <div id="resultsheader"></div>
+      <div id="results"></div>
+    </div>
+
+    <!-- JQuery Javascript -->
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+      <script type="text/javascript" src="../scripts/bootstrap-slider.js"></script>
+
+
+
+    
+    <!-- proj4 Javascript for projection information -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.5.0/proj4.js"></script>
+
+
+    <!-- OpenLayers Javascript - use ol-debug.js for debugging and ol.js for releasing when finished -->
+
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js"></script>
+
+    <!-- Our specific Javascript for this map -->
+
+    <script type="text/javascript" src="../scripts/index.js"></script> 
+
+  
+
+
+
+
+
+
+          </section>
+
+
+        
+      </main>
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+
+  </body>
+</html>
