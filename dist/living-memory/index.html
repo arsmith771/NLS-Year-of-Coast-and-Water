@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="../styles/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="../styles/slick-theme.css"/>
     <link rel="stylesheet" href="../styles/style.css">
     <title>From shore to shore - Eadar Cladaichian, Roon the Shores</title>
     <meta name="description" content="">
@@ -36,20 +38,28 @@
         </div>
       </header>
       <main class="main-content">
-        <div class="hero-image">
-          <figure class="hero-image__figure hero-image__figure--large">
+        <div class="hero-image ">
+          <!--<figure class="hero-image__figure hero-image__figure--large">
             <img class="hero-image__image" src="../images/now-and-then-1440-cockenzie-a.jpg" alt="Cockenzie">
             <figcaption class="hero-image__caption">
               Cockenzie
             </figcaption>
-          </figure>
+          </figure>-->
+
+
+            <div class="fade">
+              <div><img class="hero-image__image" src="../images/now-and-then-1440-cockenzie-a.jpg" alt="Cockenzie"></div>
+              <div><img class="hero-image__image" src="../images/now-and-then-1440-cockenzie-b.jpg" alt="Cockenzie"></div>
+            </div>
+
+
         </div>
         <div class="wrap">
           <section>
             <h2>Living memory</h2>
             <p>To Mark The 2020 Year Of Coasts And Waters The National Library Of Scotland Has Created This Resource To Celebrate Scotland’s Coastal Communities With A Small Sample From The Mackinnon Collection. This Collection Comprises More Than 14,000 Photographs Of Scotland Spanning The 1840S To The Mid-20Th Century And Was Jointly Acquired With The National Galleries Of Scotland With Help From The National Lottery Heritage Fund, The Scottish Government And Art Fund.</p>
             <div class="row">
-              <div class="location media-control col-3">
+              <!--<div class="location media-control col-3">
             
                   <dl class="location__list location__list--pdlr location__list--west">
                     <dt class="location__title media-control__title">Stornabhaigh - Leòdhas Eilean Siar  <br> Stornoway - Isle of Lewis,<br> Western Isles</dt>
@@ -59,7 +69,7 @@
                       <a href="#" class="media-control__cta">View location on map</a>
                     </dd>
                   </dl>       
-              </div>
+              </div>-->
               <div class="location media-control col-3">             
                   <dl class="location__list location__list--pdlr location__list--west">
                     <dt class="location__title media-control__title">Awa tae the Sea,<br> Cullen, Moray</dt>
@@ -130,6 +140,19 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+    <script src="../scripts/slick.min.js"></script>
     <script src="../scripts/main.min.js"></script>
+    <script>
+      jQuery('.fade').slick({
+        dots: true,
+        autoplay: true,
+        infinite: true,
+        speed: 1000,
+        fade: true,
+        cssEase: 'linear',
+        pauseOnHover: false,
+        pauseOnFocus: false
+      });
+    </script>
   </body>
 </html>

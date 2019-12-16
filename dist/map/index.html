@@ -8,33 +8,44 @@
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <link type="text/css" rel="stylesheet" href="../styles/bootstrap-slider.css" media="screen" />
-
+    <link rel="stylesheet" href="../styles/style.css">
 
     <!-- specific css to this map -->
     <link type="text/css" rel="stylesheet" href="../styles/maincss.css" media="screen" /> 
     <!-- OpenLayers css -->
     <link type="text/css" rel="stylesheet" href="../styles/ol.css" media="screen" /> 
-
+    <link rel="stylesheet" href="../styles/jquery.fancybox.min.css">
     <title>From shore to shore - Eadar Cladaichian, Roon the Shores</title>
     <meta name="description" content="">
   </head>
   <body itemscope="" itemtype="https://schema.org/WebPage">
-   
-      <main class="main-content">
+    <header class="site-header" itemscope="" itemtype="https://schema.org/WPHeader">
+      <div class="wrap">
+        <div class="row row--title-nav">
+          <a href="index.html"><h1 class="site-header__site-title">From shore to shore <br>Eadar Cladaichian, Roon the Shores</h1></a>
+          <nav class="main-nav" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+            <button  class="main-nav__toggle" id="main-nav__toggle">Menu</button>
+             <ul class="main-menu" id="main-menu">
+              <li class="main-menu__item"><a href="../about-the-collection/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">About the collection</span></a></li>
+              <li class="main-menu__item"><a href="../the-photographers/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">The photographers</span></a></li>
+              <li class="main-menu__item main-menu__item--has-sub"><a tabindex="0" class="main-menu__lnk"><span class="main-menu__lnk__inner">Locations</span></a>
+                <ul class="main-sub-menu" id="main-sub-menu">
+                  <li class="main-sub-menu__item"><a href="../locations/east/index.html" class="main-sub-menu__lnk">East</a></li>
+                  <li class="main-sub-menu__item"><a href="../locations/west/index.html" class="main-sub-menu__lnk">West</a></li>
+                  <li class="main-sub-menu__item"><a href="../locations/north/index.html" class="main-sub-menu__lnk">North</a></li>
+                </ul>
+              </li>
+              <li class="main-menu__item"><a href="../living-memory/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">Living memory</span></a></li>
+              <li class="main-menu__item"><a href="../resources/index.html" class="main-menu__lnk"><span class="main-menu__lnk__inner">Resources</span></a></li>
+            </ul>
+          </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main-content main-content--no-pdb">
      
           <section>
               
-
-
-
-
-
-
-        
-
-
-
-  
 
 
  <div id="sidebar">
@@ -96,7 +107,27 @@
 
         
       </main>
-      
+       <footer class="site-footer" itemscope="" itemtype="https://schema.org/WPFooter">
+        <div class="wrap">
+          <ul class="partner-logos">
+            <li class="partner-logos__item"><img src="../images/national-galleries-logo.svg" width="74" height="55" alt="National Galleries logo"></li>
+            <li class="partner-logos__item"><img src="../images/nls-logo.svg" width="120" height="48" alt="National Library of Scotland logo"></li>
+            <li class="partner-logos__item"><img src="../images/heritage-fund-logo.svg" width="113" height="56" alt="Heritage Fund logo"></li>
+            <li class="partner-logos__item"><img src="../images/scottish-gov-logo.svg" width="155" height="28" alt="Scottish Government logo"></li>
+            <li class="partner-logos__item"><img src="../images/artfund-logo.svg" width="114" height="24" alt="Artfund logo"></li>
+            <li class="partner-logos__item"><img src="../images/coast-and-waters-logo.svg" width="58" height="40" alt="2020 Coast & Waters logo"></li>
+          </ul>
+          <nav itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a class="footer-menu__lnk" href="https://www.nls.uk/">National Library of Scotland home page</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__lnk" href="https://www.nls.uk/learning-zone">National Library of Scotland Learning Zone</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__lnk"href="https://www.nls.uk/contact">National Library of Scotland Contact us</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__lnk" href="../accessibility/index.html">Accessibility</a></li>
+            </ul>
+          </nav>
+          <p>&copy;National Library of Scotland 2019</p>
+        </div>
+      </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS 
@@ -104,5 +135,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
 
+    <script src="../scripts/jquery.fancybox.min.js"></script>
+    <script src="../scripts/main.min.js"></script>
   </body>
 </html>

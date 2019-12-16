@@ -98,6 +98,10 @@
 }
 .main-content{
 	padding-bottom:90px;
+	&--no-pdb{
+		padding-bottom:0;
+		border-bottom:1px solid $dark3;
+	}
 	&__overlayed{
 		padding-top:390px ;
 		
@@ -413,5 +417,31 @@
 	&__caption{
 		padding:0 15px 5px 15px;
 		line-height: 1.15;
+	}
+}
+.slick-next{
+	right:25px;
+}
+.slick-dots {
+	bottom:0;
+	li{
+		width:auto;
+		height:auto;
+		font-size:16px;
+		line-height:1;
+		button{
+			background-color: #ccc;
+			width:auto;
+			height:auto;
+			font-size:16px;
+			line-height:1;
+			color:$black;
+		}
+		&.slick-active{
+			button{
+				background-color: $black;
+				color:$white;
+			}
+		}
 	}
 }

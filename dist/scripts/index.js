@@ -541,12 +541,12 @@ updateUrl();
 					var resultsheader = "";
 			
 					if (selectedFeatures.length == 1)
-				            resultsheader += '<p><strong>1 photo of ' + selectedFeatures[0].get("Location") + '</strong>  (click to view)</p>' +
-				            '<div class = "hr"></div>';
+				            resultsheader += '<p style="text-transform:uppercase;"><strong>1 photo of ' + selectedFeatures[0].get("Location") + '</strong><br>(click to view)</p>' +
+				            '<div class = ""></div>';
 					else if (selectedFeatures.length > 1)
 			
-				        resultsheader += '<p><strong>' + selectedFeatures.length + ' photos of  ' + selectedFeatures[0].get("Location") + '</strong> (click to view)</p>' +
-					'<div class = "hr"></div>';
+				        resultsheader += '<p style="text-transform:uppercase;"><strong>' + selectedFeatures.length + ' photos of  ' + selectedFeatures[0].get("Location") + '</strong><br>(click to view)</p>' +
+					'<div class = ""></div>';
 			
 				        setResultsheader(resultsheader);
 
@@ -558,10 +558,10 @@ updateUrl();
 
 
 					results += '<div id="' + selectedFeatures[k].get("Image") + '" class="resultslist" data-layerid="' + selectedFeatures[k].get("Image") + 
-					'" ><strong>Location: '  + selectedFeatures[k].get("Location")  + '</strong><br /><a href=""><img src="https://geo.nls.uk/maps/mackinnon/img/' + selectedFeatures[k].get("Image") + '.jpg" width="300" margin="5px" border="1px" /></a><br /><p>'  + 
+					'" ><strong>Location: '  + selectedFeatures[k].get("Location")  + '</strong><a class="" href="../images/' + selectedFeatures[k].get("Image") + '.jpg" data-fancybox="gallery" data-caption="'  + selectedFeatures[k].get("Caption")  + '"><img src="../images/' + selectedFeatures[k].get("Image") + '-thumb.jpg" width="300" margin="5px" border="1px" /></a><p>'  + 
 					selectedFeatures[k].get("Caption") + '</p></div>';
 
-					results += '<div class = "hr"></div>';
+					results += '<div class = ""></div>';
 			                }
 
 					info.innerHTML = results;
@@ -570,7 +570,7 @@ updateUrl();
 					var resultsheader = "";
 					resultsheader += '';
 		        		setResultsheader(resultsheader);
-				        info.innerHTML = 'No photos selected - please click on a blue circle to view photos';
+				        info.innerHTML = 'No photos selected - please click on a blue marker to view photos.';
 				  }
 
 	};
@@ -649,12 +649,12 @@ function zoomtophoto(photoID)
 					var resultsheader = "";
 			
 					if (selectedFeatures.length == 1)
-				            resultsheader += '<p><strong>1 photo of ' + selectedFeatures[0].get("Location") + '</strong>  (click to view)</p>' +
-				            '<div class = "hr"></div>';
+				            resultsheader += '<p style="text-transform:uppercase;"><strong>1 photo of ' + selectedFeatures[0].get("Location") + '</strong><br>(click to view)</p>' +
+				            '<div class = ""></div>';
 					else if (selectedFeatures.length > 1)
 			
-				        resultsheader += '<p><strong>' + selectedFeatures.length + ' photos of  ' + selectedFeatures[0].get("Location") + '</strong> (click to view)</p>' +
-					'<div class = "hr"></div>';
+				        resultsheader += '<p style="text-transform:uppercase;"><strong>' + selectedFeatures.length + ' photos of  ' + selectedFeatures[0].get("Location") + '</strong><br>(click to view)</p>' +
+					'<div class = ""></div>';
 			
 				        setResultsheader(resultsheader);
 
@@ -666,10 +666,10 @@ function zoomtophoto(photoID)
 
 
 					results += '<div id="' + selectedFeatures[k].get("Image") + '" class="resultslist" data-layerid="' + selectedFeatures[k].get("Image") + 
-					'" ><strong>Location: '  + selectedFeatures[k].get("Location")  + '</strong><br /><a href=""><img src="https://geo.nls.uk/maps/mackinnon/img/' + selectedFeatures[k].get("Image") + '.jpg" width="300" margin="5px" border="1px" /></a><br /><p>'  + 
+					'" ><strong>Location: '  + selectedFeatures[k].get("Location")  + '</strong><a class="" href="../images/' + selectedFeatures[k].get("Image") + '.jpg" data-fancybox="gallery" data-caption="'  + selectedFeatures[k].get("Caption")  + '"><img src="../images/' + selectedFeatures[k].get("Image") + '-thumb.jpg" width="300" margin="5px" border="1px" /></a><p>'  + 
 					selectedFeatures[k].get("Caption") + '</p></div>';
 
-					results += '<div class = "hr"></div>';
+					results += '<div class = ""></div>';
 			                }
 
 					info.innerHTML = results;
@@ -679,7 +679,7 @@ function zoomtophoto(photoID)
 					var resultsheader = "";
 					resultsheader += '';
 				        setResultsheader(resultsheader);
-				        info.innerHTML = 'No photos selected - please click on a blue circle to view photos';
+				        info.innerHTML = 'No photos selected - please click on a blue marker to view photos.';
 				  }
 
 	}
@@ -719,7 +719,7 @@ function zoomtophoto(photoID)
 
 
 	function setResults(str) {
-	    if (!str) str = "<p>No photos selected - please click on a blue circle to view photos</p>";
+	    if (!str) str = "<p>No photos selected - please click on a blue marker to view photos.</p>";
 	    document.getElementById('results').innerHTML = str;
 	}
 	

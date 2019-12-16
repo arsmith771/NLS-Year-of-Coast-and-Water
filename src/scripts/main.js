@@ -93,6 +93,33 @@ function toggleResponsiveMenu(){
 	});
 }
 
+function fixElem(){
+
+	var scrollTop = jQuery(window).scrollTop();
+
+	if ( scrollTop > 90 ){
+
+		jQuery('#resultsSideBar').css('position','fixed').css('top','20px');
+
+	} else {
+
+		jQuery('#resultsSideBar').css('position','absolute').css('top','110px');
+
+	}
+
+	console.log( scrollTop );
+
+}
+
+function nowThen(){
+
+	var now = jQuery('#slick-slide-control00'),
+		then = jQuery('#slick-slide-control01');
+
+	now.text('Now - Cockenzie 2019');
+	then.text('Then - Cockenzie 1860');
+}
+
 jQuery(document).ready(function(){
 
 	showOverlay();
@@ -100,5 +127,11 @@ jQuery(document).ready(function(){
 	ctrlMedia('#open-video-1', 'awa-tae-the-sea');
 	hideOverlay();
 	toggleResponsiveMenu();
+	nowThen();
+	
+});
 
+jQuery(window).on('scroll', function(){
+	
+	fixElem();
 });
