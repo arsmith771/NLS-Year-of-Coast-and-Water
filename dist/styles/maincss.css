@@ -49,8 +49,8 @@ padding: 10px 10px 10px 10px; background: #fff; z-index: 1;}
 #resultsSideBar {position: absolute;top: 110px;	right: 55px; width: 330px; max-height: 620px;  z-index: 2; background-color: white; margin: 0px;padding: 10px;
 background:rgba(255,255,255,0.95);  }
 #resultsSideBar p{    margin-top: 0; line-height: 1.0;}
-#resultsSideBar a, img{  display: block;}
-
+#resultsSideBar a{  display: block; margin-bottom: 5px;}
+#resultsSideBar img{  display: block;}
 #results { max-height: 500px; max-width: 330px; overflow: auto; }
 
 #resultsheader { font-size: 1.0em; line-height: 2.0;}

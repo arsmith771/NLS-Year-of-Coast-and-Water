@@ -14,6 +14,21 @@ function showOverlay(){
 	});
 }
 
+function showOverlay2(){
+
+	var overlay = jQuery('#audio-overlay-1'),
+		target1 = jQuery('#open-audio-1');
+
+	jQuery('#open-audio-1').on('click', function(event){
+
+		event.preventDefault();
+		jQuery('#audio-overlay-1')
+		.css('display', 'flex')
+	    .hide()
+	    .fadeIn();
+
+	});
+}
 
 
 function ctrlMedia(elem0, elem1){
@@ -47,6 +62,22 @@ function hideOverlay(){
 		document.getElementById('awa-tae-the-sea').pause();
 		jQuery('#open-video-1').addClass('paused');
 		jQuery('#open-video-1').removeClass('playing');
+
+		console.log('paused');
+
+	});
+
+}
+
+function hideOverlay2(){
+
+	jQuery('body').on('click', '#close-overlay-2', function(){
+
+		//event.preventDefault();
+		jQuery('#audio-overlay-1').fadeOut();
+		document.getElementById('archie-johnstone').pause();
+		jQuery('#open-audio-1').addClass('paused');
+		jQuery('#open-audio-1').removeClass('playing');
 
 		console.log('paused');
 
@@ -123,9 +154,12 @@ function nowThen(){
 jQuery(document).ready(function(){
 
 	showOverlay();
+	showOverlay2();
 	tabMenu();
 	ctrlMedia('#open-video-1', 'awa-tae-the-sea');
+	ctrlMedia('#open-audio-1', 'archie-johnstone');
 	hideOverlay();
+	hideOverlay2();
 	toggleResponsiveMenu();
 	nowThen();
 	

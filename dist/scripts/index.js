@@ -558,7 +558,7 @@ updateUrl();
 
 
 					results += '<div id="' + selectedFeatures[k].get("Image") + '" class="resultslist" data-layerid="' + selectedFeatures[k].get("Image") + 
-					'" ><strong>Location: '  + selectedFeatures[k].get("Location")  + '</strong><a class="" href="../images/' + selectedFeatures[k].get("Image") + '.jpg" data-fancybox="gallery" data-caption="'  + selectedFeatures[k].get("Caption")  + '"><img src="../images/' + selectedFeatures[k].get("Image") + '-thumb.jpg" width="300" margin="5px" border="1px" /></a><p>'  + 
+					'" ><strong>Location: '  + selectedFeatures[k].get("Location")  + '</strong><a class="" href="../images/' + selectedFeatures[k].get("Image") + '.jpg" data-fancybox="gallery" data-caption="'  + selectedFeatures[k].get("Caption")  + '"><img src="../images/' + selectedFeatures[k].get("Image") + '-thumb.jpg" alt="' + selectedFeatures[k].get("Caption") + '"  width="300"></a><p>'  + 
 					selectedFeatures[k].get("Caption") + '</p></div>';
 
 					results += '<div class = ""></div>';
@@ -666,7 +666,7 @@ function zoomtophoto(photoID)
 
 
 					results += '<div id="' + selectedFeatures[k].get("Image") + '" class="resultslist" data-layerid="' + selectedFeatures[k].get("Image") + 
-					'" ><strong>Location: '  + selectedFeatures[k].get("Location")  + '</strong><a class="" href="../images/' + selectedFeatures[k].get("Image") + '.jpg" data-fancybox="gallery" data-caption="'  + selectedFeatures[k].get("Caption")  + '"><img src="../images/' + selectedFeatures[k].get("Image") + '-thumb.jpg" width="300" margin="5px" border="1px" /></a><p>'  + 
+					'" ><strong>Location: '  + selectedFeatures[k].get("Location")  + '</strong><a class="" href="../images/' + selectedFeatures[k].get("Image") + '.jpg" data-fancybox="gallery" data-caption="'  + selectedFeatures[k].get("Caption")  + '"><img src="../images/' + selectedFeatures[k].get("Image") + '-thumb.jpg" alt="' + selectedFeatures[k].get("Caption") + '"  width="300"></a><p>'  + 
 					selectedFeatures[k].get("Caption") + '</p></div>';
 
 					results += '<div class = ""></div>';

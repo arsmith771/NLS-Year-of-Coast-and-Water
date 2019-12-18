@@ -133,9 +133,31 @@
 		text-decoration:none;
 		font-family:$light;
 		display:block;
-		padding: 10px 40px;
+		padding: 10px 10px;
 		position:relative;
-
+		left: -5px;
+		&:before{
+			content:'';
+			background-image: url('../images/whitefish.png');
+			background-position:0 0;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			display:inline-block;
+			margin-right:5px;
+			width:25px;
+			height:10px;
+		}
+		&:after{
+			content:'';
+			background-image: url('../images/whitefish.png');
+			background-position:0 0;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			display:inline-block;
+			margin-left:5px;
+			width:25px;
+			height:10px;
+		}
 	}
 
 }

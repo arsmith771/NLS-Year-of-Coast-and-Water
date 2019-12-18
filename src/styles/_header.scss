@@ -1,6 +1,8 @@
 .site-header{
 	//min-height:80px;
 	border-bottom:10px solid $dark2;
+	position: relative;
+    z-index: 3;
 	&--no-bdr{
 		border-bottom:none;
 	}
