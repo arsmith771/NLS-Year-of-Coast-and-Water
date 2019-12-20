@@ -151,6 +151,17 @@ function nowThen(){
 	then.text('Then - Cockenzie 1860');
 }
 
+function menuReset(){
+
+	var winW = window.innerWidth;
+
+	if (winW > 992) {
+
+		jQuery('#main-menu').removeAttr('style');
+	}
+	
+}
+
 jQuery(document).ready(function(){
 
 	showOverlay();
@@ -162,10 +173,15 @@ jQuery(document).ready(function(){
 	hideOverlay2();
 	toggleResponsiveMenu();
 	nowThen();
-	
+	menuReset();
 });
 
 jQuery(window).on('scroll', function(){
 	
 	fixElem();
+});
+
+jQuery(window).on('resize', function(){
+
+	menuReset();
 });

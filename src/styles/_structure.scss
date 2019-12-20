@@ -36,6 +36,17 @@
 	}
 
 }
+.row-title-nav{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	flex-wrap:wrap;
+	@media only screen and (min-width: $large){
+		flex-direction:row;
+		justify-content:space-between;
+		flex-wrap:nowrap;
+	}
+}
 .col {
 	&-3{
 		width:292px;
@@ -476,4 +487,10 @@
 	padding-left: 130px;
     background-position: -50px -50px;
     min-height: 100px;
+}
+.blk{
+	//display:block;
+	@media only screen and (min-width: 1150px){
+		display:inline;
+	}
 }
