@@ -16,19 +16,26 @@ body{
 }
 h2{
 	color:$dark3;
-	font-size: 42px;
+	font-size: 24px;
 	font-family:$bold;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	line-height: 1;
+	@media only screen and (min-width: $extra-small){
+		font-size: 42px;
+		letter-spacing: 4px;
+	}
 }
 h3 {
     color: #515353;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Source Sans Pro bold";
     //text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 1.15;
     margin-top:2em;
+    @media only screen and (min-width: $extra-small){
+		font-size: 24px;
+	}
 }
 a {
 	color:$blue1;

@@ -8,7 +8,7 @@
 		border-bottom:none;
 	}
 	&__site-title{
-		width:318px;
+		width:260px;
 		height:63px;
 		margin: 8px 0;
 		font-size:16px; // temp
@@ -26,6 +26,10 @@
 			background-image:url('../images/site-logo.svg');
 			background-size: 100% auto;
 			background-repeat:no-repeat;
+		}
+		@media only screen and (min-width: $extra-small){
+			width:318px;
+			//height:63px;
 		}
 	}
 }

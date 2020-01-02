@@ -140,8 +140,12 @@
 	}
 	&__panel{
 		&--1{
-			margin-left: calc(7.5% + 14px );
-			margin-right: calc(7.5% + 14px );
+			margin-left:0;
+			margin-right: 0;
+			@media only screen and (min-width: $medium){
+				margin-left: calc(7.5% + 14px );
+				margin-right: calc(7.5% + 14px );
+			}
 		}
 	}
 	&__page-intro{
@@ -221,12 +225,21 @@
 			//max-width: none; 
 		}
 		&__text{
-			margin-left: 7.5%;
+			margin-left: 4%;
+			@media only screen and (min-width: $large){
+				margin-left: 7.5%;
+			}
 			&--photographers{
-				margin-right:7.5%;
+				margin-right:4%;
+				@media only screen and (min-width: $large){
+					margin-right:7.5%;
+				}
 			}
 			&--about{
-				margin-right:7.5%;
+				margin-right:4%;
+				@media only screen and (min-width: $large){
+					margin-right:7.5%;
+				}
 			}
 		}
 	}
@@ -493,4 +506,17 @@
 	@media only screen and (min-width: 1150px){
 		display:inline;
 	}
+}
+#sidebar{
+	display:none;
+	@media only screen and (min-width: $large){
+		display:block;
+	}
+}
+.ol-unselectable{
+	
+	@media only screen and (min-width: $medium){
+
+	}
+
 }
