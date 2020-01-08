@@ -9,17 +9,21 @@
 		right: 5px;
 		top:18px;
 		background-image: url('../images/hamburger.svg');
-		background-size:100% auto;
+		background-size:90% auto;
 		background-color:transparent;
-		width:47px;
-		height:39px;
+		width: 40px;
+    	height: 28px;
 		border: 0;
 		cursor:pointer;
 		@media only screen and (min-width: $extra-small){
 			right: 5%;
+			width:47px;
+			height:39px;
+			background-size:100% auto;
 		}
 		@media only screen and (min-width: $large){
 			display:none;
+			
 		}
 	}
 }

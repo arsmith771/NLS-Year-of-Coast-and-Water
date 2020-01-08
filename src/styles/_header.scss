@@ -8,8 +8,8 @@
 		border-bottom:none;
 	}
 	&__site-title{
-		width:260px;
-		height:63px;
+		width:240px;
+		height:48px;
 		margin: 8px 0;
 		font-size:16px; // temp
 		position:relative;
@@ -23,13 +23,13 @@
 			right:0;
 			z-index: 2;
 			background-color:$white;
-			background-image:url('../images/site-logo.svg');
+			background-image:url('../images/site-logo.png');
 			background-size: 100% auto;
 			background-repeat:no-repeat;
 		}
 		@media only screen and (min-width: $extra-small){
 			width:318px;
-			//height:63px;
+			height:63px;
 		}
 	}
 }
